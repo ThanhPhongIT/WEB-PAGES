@@ -1,0 +1,553 @@
+/* 
+Theme name: Mobile App
+Author: Thanh Phong
+Version: 1.0.0
+ */
+
+
+/* 
+ Tables of Content
+ 1, Reset Css
+ 2, Header
+ */
+
+
+/* ========== 1, Reset Css ========== */
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ========== 2, Header ========== */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header .header__all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__logo {
+    font-size: 22px;
+    color: #0061f2;
+    font-weight: 600;
+}
+
+.header .header__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .header__menu .header__menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.header .header__menu .header__menu-item .header__menu-item-icon {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #7f7f7f;
+}
+
+.header .header__menu .header__menu-button button {
+    background-color: #0061f2;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+}
+
+.header .header__dropdown {
+    display: none;
+}
+
+.header__dropdown-content {}
+
+.header .header__dropdown button {
+    border: none;
+    background-color: white;
+}
+
+.header__dropdown-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header__dropdown-content-item-icon {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #7f7f7f;
+}
+
+.header__dropdown-content-item button {
+    background-color: #0061f2;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.header__dropdown-content {}
+
+.header__dropdown .header__dropdown-button button svg:hover .header__dropdown-content {
+    display: flex;
+}
+
+.header__menu-item-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ========== 3, Banner ========== */
+
+.banner {
+    padding-top: 8rem;
+    background-color: #0061f2;
+}
+
+.banner .banner__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.banner .banner__left-heading {
+    font-size: 35px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.banner .banner__left-subheading {
+    font-size: 20px;
+    font-weight: 400;
+    color: #8c99ea;
+    padding-bottom: 60px;
+}
+
+.banner__left-note {
+    padding-top: 10px;
+    font-size: 15px;
+    color: #8c9aea;
+}
+
+.banner__left .banner__left-logo {
+    display: flex;
+}
+
+.banner__left .banner__left-logo img {
+    height: 3rem;
+    margin-right: 20px;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
+    padding-bottom: 198.898071625%;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
+    background-image: url(../images/portrait.png);
+    z-index: initial;
+}
+
+.device-wrapper {
+    max-width: 300px;
+    width: 100%;
+}
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+
+.mb-n15,
+.my-n15 {
+    margin-bottom: -9rem !important;
+}
+
+.mb-n15,
+.my-n15 {
+    margin-bottom: -9rem !important;
+}
+
+.device {
+    position: relative;
+    background-size: cover;
+    height: 100px;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
+    top: 3.1855955679%;
+    left: 6.8870523416%;
+    width: 86.2258953168%;
+    height: 93.6288088643%;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
+    z-index: -10000;
+}
+
+.device .screen {
+    position: absolute;
+    background-size: cover;
+    pointer-events: auto;
+}
+
+.z-1 {
+    z-index: 1 !important;
+    position: relative !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.screen img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
+    content: "";
+    background-image: url(../images/portrait_black.png);
+}
+
+.device::after {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+/* ========== 5, Info ========== */
+
+.info {
+    padding: 100px 0;
+}
+
+.info__all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .info__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info .info__item .info__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #0061f2;
+}
+
+.info .info__item .info__item-icon svg {
+    color: white;
+}
+
+.info .info__item .info__item-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.info .info__item-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #697382;
+}
+
+
+/* ========== 6, About ========== */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+.text-gray {
+    color: #c5ccd6 !important;
+}
+
+.about__item-logo svg {
+    width: 150px;
+}
+
+.about__item-description {
+    padding: 50px 0;
+    font-weight: 400;
+    font-size: 25px;
+    width: 100%;
+    color: #0061f2;
+}
+
+.about__item-name {
+    font-weight: 600;
+}
+
+.about__item-subname {
+    font-weight: 300;
+    color: #c5ccd6;
+}
+
+
+/* ========== 7, Feature ========== */
+
+.feature {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #eff3f9;
+}
+
+.feature .feature__heading {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0061f2;
+}
+
+.feature .feature__subheading {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.feature .feature__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.feature .feature__item .feature__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #bfe5dc;
+    margin-top: 20px;
+}
+
+.feature .feature__item .feature__item-icon svg {
+    color: #00ac69;
+}
+
+.feature .feature__item .feature__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.feature .feature__item .feature__item-description {
+    color: #687281;
+    padding-bottom: 30px;
+}
+
+
+/* ========== 8, Install ========== */
+
+.install {
+    padding-top: 50px;
+}
+
+.install .install__title {}
+
+.install__logo img {
+    height: 3rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.install__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.install svg {
+    height: 50px;
+    width: 100%;
+    color: #1f2d41;
+    margin-top: 70px;
+}
+
+
+/* ========== 9, Footer ========== */
+
+.footer {
+    background-color: #1f2d41;
+    color: #979da6;
+    padding-top: 100px;
+    margin-top: 0;
+    border: none;
+}
+
+.footer a {
+    color: #979da6;
+}
+
+.footer a:hover {
+    color: #979da6;
+}
+
+.footer__top {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #979da6;
+    ;
+}
+
+.footer__top .brand {
+    padding-bottom: 30px;
+}
+
+.footer__top .footer__brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__top p {
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.footer__top h6 {
+    font-weight: 700;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.footer hr {
+    color: #979da6;
+}
+
+.footer__bottom {
+    padding: 20px 0;
+}
+
+.footer__bottom .link {
+    text-align: right;
+}
+
+
+/* ========== 10, Responsive ========== */
+
+@media(max-width: 992px) {
+    .header .header__menu {
+        display: none !important;
+    }
+    .header .header__dropdown {
+        display: block;
+    }
+    .banner .banner__right {
+        margin-bottom: 30px;
+    }
+    .install__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footer__bottom .link {
+        text-align: left;
+    }
+}
+
+@media(max-width: 350px) {
+    .banner .banner__left-logo img {
+        height: 2.5rem;
+    }
+    .install .install__logo {
+        height: 2rem;
+    }
+    .install .install__all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__top ul {
+        display: block;
+        padding-bottom: 100px;
+    }
+}

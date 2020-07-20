@@ -1,0 +1,276 @@
+/*
+Theme name: Galaxy
+Author    : Thanh Phong
+Version   : 1.0.0
+*/
+
+
+/*
+Table of Content
+1, Reset Css
+2, Header
+3, Banner
+4, Service
+*/
+
+
+/*=================== 1, Reset Css ===================*/
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*=================== 2, Header ===================*/
+
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__text {
+    color: #c5c6c7;
+    font-size: 13px;
+}
+
+
+/*=================== 3, Banner ===================*/
+
+.banner {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/banner.jpg);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner__text1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 32.38px;
+    font-weight: 700;
+}
+
+.banner .banner__text2 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.banner__button button {
+    background-color: #fb6e52;
+    display: inline-block;
+    width: 161px;
+    height: 42px;
+    padding: 10px 20px;
+    border: solid 1.2px white;
+    color: white;
+    font-size: 13px;
+    border-radius: 7px;
+}
+
+
+/*=================== 4, Service ===================*/
+
+.service {
+    padding-top: 52px;
+    padding-bottom: 56px;
+}
+
+.service .service__item {
+    text-align: center;
+}
+
+.service .service__item .service__item-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fb6e52;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.service .service__item .service__item-icon i {
+    color: white;
+}
+
+.service .service__item .service__item-title {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 15pt;
+    color: #292c34;
+}
+
+.service .service__item .service__item-descreption {
+    font-weight: 300;
+    font-size: 13pt;
+    color: #d2d3d4;
+}
+
+@media(max-width: 767px) {
+    .service__item {
+        margin-bottom: 25px;
+    }
+}
+
+
+/*=================== 5, Quote ===================*/
+
+.quote {
+    margin-bottom: 60px;
+}
+
+.quote .quote__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fc8672;
+    font-size: 15pt;
+    font-weight: 300;
+}
+
+
+/*=================== 6, Images ===================*/
+
+.images {}
+
+.images .images__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images .images__item .images__item-img img {
+    display: block;
+    width: 100%;
+}
+
+.images .images__item .images__item-title {
+    padding-top: 20px;
+    padding-bottom: 17px;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.images .images__item .images__item-description {
+    font-weight: 300;
+    font-size: 13pt;
+    margin-bottom: 56px;
+}
+
+
+/*=================== 7, Blog ===================*/
+
+.blog {
+    background-color: #f9f9f9;
+}
+
+.blog__title {
+    font-size: 15pt;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 54px;
+}
+
+.blog__item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.blog .blog__item .blog__item-img {}
+
+.blog .blog__item .blog__item-img img {
+    width: 100%;
+}
+
+.blog .blog__item .blog__item-title {
+    font-size: 15pt;
+    font-weight: 400;
+    color: #fb6e52;
+    padding-top: 26px;
+    padding-bottom: 21px;
+    text-align: left;
+}
+
+.blog .blog__item .blog__item-description {
+    color: #97999b;
+    font-size: 13pt;
+    font-weight: 300;
+    padding-bottom: 57px;
+}
+
+
+/*=================== 8, Footer ===================*/
+
+.footer {
+    background-color: #292c34;
+    height: 100px;
+}
+
+.footer .footer__logo img {
+    margin-top: 35px;
+    width: unset;
+}
+
+.footer .footer__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.footer .footer__social i {
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+@media(max-width:572px) {
+    .banner .banner__text1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .blog .blog__item-img img {
+        width: 300px;
+    }
+}
+
+@media(max-width:383px) {
+    .banner .banner__text1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .banner .banner__text2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
