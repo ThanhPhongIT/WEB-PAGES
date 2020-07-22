@@ -1,0 +1,83 @@
+.product {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    transform: translateY(30%);
+    &__item {
+        width: 90%;
+        margin: auto;
+        &-price {
+            font-size: 35px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+        &-author {
+            font-size: 15px;
+            font-weight: 300;
+            padding-bottom: 30px;
+        }
+        &-description {
+            font-size: 13px;
+            font-weight: 100;
+            color: #a5a5a5;
+        }
+        &-button {
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                width: 170px;
+                height: 50px;
+                border: 1px solid #f275bb;
+                border-radius: 40px;
+                outline: none;
+                background-color: #f039a0;
+                color: #ffffff;
+                font-weight: 400;
+                &:hover {
+                    background-color: white;
+                    color: #f275bb;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .product {
+        padding: 50px 0;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+        transform: translateY(30%);
+    }
+    .product__item-price {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .product__item-author {
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+    .product__item-description {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .product__item-button {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

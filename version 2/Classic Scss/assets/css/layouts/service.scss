@@ -1,0 +1,32 @@
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-img {
+            img {
+                width: 150px;
+            }
+        }
+        &-title {
+            font-size: 15px;
+            font-weight: 300;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        &-description {
+            color: #a5a5a5;
+            font-size: 13px;
+            font-weight: 100;
+            @media(max-width: 768px) {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

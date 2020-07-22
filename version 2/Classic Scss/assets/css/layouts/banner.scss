@@ -1,0 +1,55 @@
+.banner {
+    background-image: url(../images/background_header.png);
+    background-color: #861dfe;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: cover;
+    padding-top: 200px;
+    &-item {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-head {
+        font-size: 15px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    &-heading {
+        font-size: 50px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    &-subheading {
+        font-size: 26px;
+        font-weight: 200;
+        padding-bottom: 40px;
+    }
+    &-button {
+        button {
+            width: 170px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 40px;
+            outline: none;
+            font-size: 15px;
+            color: #303133;
+            &:hover {
+                color: white;
+                background-color: #861dfe;
+            }
+        }
+    }
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+}
