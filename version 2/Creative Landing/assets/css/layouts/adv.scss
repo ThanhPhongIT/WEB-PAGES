@@ -1,0 +1,13 @@
+.adv {
+    background-color: #f7f7f7;
+    &__item {
+        display: flex;
+        padding: 80px 0;
+        img {
+            width: 200px;
+            @media(max-width: 768px) {
+                width: 100px;
+            }
+        }
+    }
+}
